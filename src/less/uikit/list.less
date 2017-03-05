@@ -32,6 +32,31 @@
 
     .uk-list-striped > li:first-child { border-top: @list-striped-border-width solid @list-striped-border; }
 
+    .uk-list-circle,
+    .uk-list-disc {
+        padding-left: 15px;
+        > li {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                left: -15px;
+                top: calc(1rem / 2);
+                height: 5px;
+                width: 5px;
+                border-radius: 50%;
+                box-shadow: 0 0 0 1px #595959;
+            }
+        }
+    }
+
+    .uk-list-disc {
+        > li:before { background-color: #595959; }
+    }
+
+    .uk-list-ordered {
+        padding-left: 15px;
+    }
 }
 
 

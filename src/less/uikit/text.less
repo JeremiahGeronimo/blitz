@@ -13,6 +13,8 @@
 // New
 //
 
+@text-medium-font-size:                         16px;
+
 @text-meta-link-color:                          @text-meta-color;
 @text-meta-link-hover-color:                    @global-color;
 
@@ -51,7 +53,20 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-text-misc() {}
+.hook-text-misc() {
+
+    .uk-text-medium {
+        font-size: @text-medium-font-size;
+    }
+
+    .uk-text-cursive {
+        font-style: italic;
+    }
+
+    .uk-text-regular {
+        font-weight: normal;
+    }
+}
 
 
 // Inverse

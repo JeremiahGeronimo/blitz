@@ -33,6 +33,10 @@
 
 @base-blockquote-color:                         @global-emphasis-color;
 
+@base-blockquote-font-size:                     16px;
+@base-blockquote-line-height:                   1.5;
+@base-blockquote-font-style:                    normal;
+@base-blockquote-margin-vertical:               @global-margin;
 @base-blockquote-footer-color:                  @global-color;
 
 @base-pre-padding:                              10px;
@@ -40,6 +44,14 @@
 @base-pre-border-width:                         @global-border-width;
 @base-pre-border:                               @global-border;
 @base-pre-border-radius:                        3px;
+
+//
+// New
+//
+
+@base-blockquote-secondary-background:          #f6f6f6;
+@base-blockquote-secondary-border-width:        10px;
+@base-blockquote-secondary-border:              @global-secondary-background;
 
 
 // Body
@@ -94,6 +106,28 @@
 
 .hook-base-blockquote() {
     color: @base-blockquote-color;
+    position: relative;
+    padding: 20px 30px;
+
+    &:before,
+    &:after {
+        position: absolute;
+        font-family: 'gilroyextrabold', sans-serif;
+        font-size: 70px;
+        font-style: italic;
+        line-height: 30px;
+        color: #e3e3e3;
+    }
+    &:before {
+        content: '"';
+        top: 100%;
+        left: -5px;
+    }
+    &:after {
+        content: '"';
+        top: 0;
+        right: 15px;
+    }
 }
 
 .hook-base-blockquote-footer() {
@@ -122,8 +156,13 @@
 .hook-base-misc() {
 
     a:active,
-    .uk-link:active {
+    [class*='uk-link']:active {
         color: @base-link-active-color;
+    }
+
+    .uk-blockquote-secondary {
+        background-color: @base-blockquote-secondary-background;
+        border-left: @base-blockquote-secondary-border-width solid @base-blockquote-secondary-border;
     }
 
 }

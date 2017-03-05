@@ -7,6 +7,9 @@
 // Variables
 // ========================================================================
 
+@table-cell-padding-vertical:                   6px;
+@table-cell-padding-horizontal:                 12px;
+
 @table-header-cell-font-size:                   @global-small-font-size;
 @table-header-cell-font-weight:                 normal;
 @table-header-cell-color:                       @global-muted-color;
@@ -23,11 +26,16 @@
 // ========================================================================
 
 .hook-table-header-cell() {
-    border-bottom: @table-cell-border-width solid @table-cell-border;
-    text-transform: uppercase;
+    background-color: #f1f1f1;
+    color: #555;
+    text-align: left;
+    font-size: 14px;
 }
 
-.hook-table-cell() {}
+.hook-table-cell() {
+    color: #898989;
+    font-size: 14px;
+}
 
 .hook-table-footer() { border-top: @table-cell-border-width solid @table-cell-border; }
 
@@ -53,13 +61,4 @@
 // Miscellaneous
 // ========================================================================
 
-.hook-table-misc() {
-
-    .uk-table :not(:last-child) > td { border-bottom: @table-cell-border-width solid @table-cell-border; }
-
-    .uk-table tbody tr {
-        -webkit-transition: background-color 0.1s linear;
-        transition: background-color 0.1s linear;
-    }
-
-}
+.hook-table-misc() {}
