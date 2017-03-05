@@ -1,0 +1,48 @@
+//
+// Component: Dotnav
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@dotnav-item-width:                             12px;
+@dotnav-item-background:                        #fff;
+
+@dotnav-item-hover-background:                  @global-secondary-color;
+@dotnav-item-onclick-background:                @global-secondary-color;
+@dotnav-item-active-background:                 @global-secondary-color;
+
+
+// Component
+// ========================================================================
+
+.hook-dotnav() {}
+
+.hook-dotnav-item() {
+    -webkit-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.hook-dotnav-item-hover() {}
+
+.hook-dotnav-item-onclick() {}
+
+.hook-dotnav-item-active() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-dotnav-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-dotnav() {}
+.hook-inverse-dotnav-item() {}
+.hook-inverse-dotnav-item-hover() {}
+.hook-inverse-dotnav-item-onclick() {}
+.hook-inverse-dotnav-item-active() {}

@@ -1,0 +1,61 @@
+//
+// Component: Breadcrumb
+//
+// ========================================================================
+
+
+// Variables
+// ========================================================================
+
+@breadcrumb-item-font-size:                         @global-font-size;
+@breadcrumb-item-color:                             #898989;
+@breadcrumb-item-hover-color:                       @global-primary-color;
+@breadcrumb-item-hover-text-decoration:             none;
+@breadcrumb-item-active-color:                      #e3e3e3;
+
+//
+// New
+//
+
+@breadcrumb-item-press-color:                       #555;
+@breadcrumb-item-text-decoration:                   none;
+
+
+// Component
+// ========================================================================
+
+.hook-breadcrumb() {}
+
+
+// Items
+// ========================================================================
+
+.hook-breadcrumb-item() {
+    text-decoration: @breadcrumb-item-text-decoration;
+}
+
+.hook-breadcrumb-item-hover() {
+    &:active {
+        color: @breadcrumb-item-press-color;
+    }
+}
+
+.hook-breadcrumb-item-active() {}
+
+.hook-breadcrumb-divider() {}
+
+
+// Miscellaneous
+// ========================================================================
+
+.hook-breadcrumb-misc() {}
+
+
+// Inverse
+// ========================================================================
+
+.hook-inverse-breadcrumb-item() {}
+.hook-inverse-breadcrumb-item-hover() {}
+.hook-inverse-breadcrumb-item-active() {}
+
+.hook-inverse-breadcrumb-divider() {}
