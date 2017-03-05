@@ -23,19 +23,26 @@
  * -------------------------------------------------------------
  */
 
-.uk-section:not(.uk-section-media) {
+.uk-section {
+
+    &:not(.uk-section-media) {
+
+        .tm-section-description {
+            margin-top: -(@section-padding-vertical - 15px);
+
+            @media (min-width: @breakpoint-medium) {
+                margin-top: -(@section-padding-vertical-m - 15px);
+            }
+        }
+
+    }
+
     .tm-section-description {
         position: relative;
         z-index: 2;
-        margin-top: -(@section-padding-vertical - 15px);
-
-        @media (min-width: @breakpoint-medium) {
-            margin-top: -(@section-padding-vertical-m - 15px);
-        }
-
 
         h2 {
-            margin: 0 0 5px;
+            margin: 15px 0 5px;
         }
     }
 
@@ -70,6 +77,23 @@
         }
     }
 
+    &.uk-section-media {
+        .tm-section-logo {
+            .tm-section-logo-char {
+                color: rgba(255, 255, 255, 0.35);
+            }
+
+            .tm-section-logo-text {
+                color: #fff;
+                text-shadow: none;
+            }
+        }
+
+        .tm-section-description {
+            color: #fff;
+        }
+    }
+
     &.uk-section-muted {
         .tm-section-logo-text {
             text-shadow:
@@ -82,16 +106,24 @@
 }
 
 .tm-main {
-    .uk-section:not(.uk-section-media) {
-        .tm-section-description {
-            margin-top: -(@section-padding-vertical);
+    .uk-section{
+        &:not(.uk-section-media) {
+            .tm-section-description {
+                margin-top: -(@section-padding-vertical);
 
-            @media (min-width: @breakpoint-medium) {
-                margin-top: -(@section-padding-vertical - 10px);
+                @media (min-width: @breakpoint-medium) {
+                    margin-top: -(@section-padding-vertical - 10px);
+                }
+
+                @media (min-width: @breakpoint-large) {
+                    margin-top: -(@section-padding-vertical-m);
+                }
             }
+        }
 
-            @media (min-width: @breakpoint-large) {
-                margin-top: -(@section-padding-vertical-m);
+        .tm-section-description {
+            h2 {
+                margin: 5px 0;
             }
         }
 
@@ -138,7 +170,6 @@
         }
     }
 }
-
 
 
 /*
@@ -612,6 +643,31 @@
     }
 }
 
+.tm-districts {
+    margin-left: -30px;
+    > * {
+        padding-left: 30px;
+    }
+    .uk-button-default {
+        background-color: #fff;
+        color: #555;
+        border-radius: 4px;
+        width: 100%;
+        max-width: 180px;
+        line-height: 45px;
+        font-size: 14px;
+
+        &:hover, &:focus {
+            background-color: @button-default-hover-background;
+            border-color: @button-default-hover-border;
+        }
+        &:active {
+            background-color: @button-default-active-background;
+            border-color: @button-default-active-border;
+        }
+    }
+}
+
 
 /*
  * Subway
@@ -799,6 +855,7 @@
  */
 
 @tm_line-clamp-line-height:                     1.3rem;
+
 
 [class*='tm-line-clamp'] {
     display: -webkit-box;
