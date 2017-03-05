@@ -1,4 +1,5 @@
 /dist
+/build
 /src/styles/less/variables.less
 *.7z
 *.zip

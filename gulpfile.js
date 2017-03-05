@@ -41,10 +41,10 @@ const
             images  : './dist/images'
         },
         build   : {
-            css     : './build/css',
-            fonts   : './build/fonts',
-            js      : './build/js',
-            images  : './build/images'
+            css     : env.demo ? './css' : './build/css',
+            fonts   : env.demo ? './fonts' : './build/fonts',
+            js      : env.demo ? './js' : './build/js',
+            images  : env.demo ? './images' : './build/images'
         }
     };
 
@@ -102,7 +102,7 @@ gulp.task(
 
 gulp.task(
     'build:html',
-    () => gulp.src('./src/**/*.html').pipe(gulp.dest(env.production ? './build/' : './dist/'))
+    () => gulp.src('./src/**/*.html').pipe(gulp.dest(env.production ? env.demo ? './' : './build/' : './dist/'))
 );
 
 //
