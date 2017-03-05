@@ -792,8 +792,7 @@
 
                                 <div>
                                     <div class="uk-form-controls">
-                                        <button uk-toggle="target: #modal"
-                                                class="uk-button uk-button-secondary uk-button-inverse uk-button-small uk-button-border uk-button-rounded uk-width-1-1">Получить цену</button>
+                                        <button class="uk-button uk-button-secondary uk-button-inverse uk-button-small uk-button-border uk-button-rounded uk-width-1-1">Получить цену</button>
                                     </div>
                                 </div>
                             </form>
@@ -1590,6 +1589,10 @@
                         <!-- UI -->
                         <section class="uk-section">
                             <div class="uk-margin-large">
+                                <button class="uk-button uk-button-primary"
+                                        uk-toggle="target: #modal">Модальная форма</button>
+                            </div>
+                            <div class="uk-margin-large">
                                 <h1 class="uk-text-uppercase">Заголовок H1
                                     <small>&lt;small&gt;</small> в две строки будет выглядеть так Lorem ipsum dolor sit
                                     amet</h1>
@@ -1749,6 +1752,7 @@
                                 </table>
                             </div>
                         </section>
+
                     </div>
                 </div>
             </div>
@@ -1902,6 +1906,21 @@
                     <div class="uk-margin">
                         <div class="uk-form-controls">
                             <input type="text" class="uk-input uk-form-danger" placeholder="Поле для ввода">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <div class="uk-form-controls">
+                            <input type="text" class="uk-input" placeholder="Поле для ввода" value="Заполненное">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <div class="uk-form-controls">
+                            <div uk-form-custom>
+                                <input type="file">
+                                <button class="uk-button uk-button-default" type="button">Выбрать</button>
+                            </div>
                         </div>
                     </div>
 
