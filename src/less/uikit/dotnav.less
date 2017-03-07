@@ -18,7 +18,17 @@
 // Component
 // ========================================================================
 
-.hook-dotnav() {}
+.hook-dotnav() {
+    &.uk-light {
+        > li {
+            &:not(.uk-active):not(:hover) {
+                > a {
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+}
 
 .hook-dotnav-item() {
     -webkit-transition: background-color 0.2s ease-in-out;
