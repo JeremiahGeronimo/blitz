@@ -12,6 +12,7 @@
 
         <link type="text/css" rel="stylesheet" href="./css/index.css"/>
 
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
         <script type="text/javascript" src="./js/index.js"></script>
     </head>
 
@@ -108,7 +109,7 @@
                             <div class="uk-navbar-dropdown"
                                  uk-drop="boundary: .tm-section-navbar; boundary-align: true; pos: bottom-justify;">
                                 <div class="uk-container uk-container-center uk-padding-large-vertical">
-                                    <div class="uk-grid uk-child-width-1-4" uk-grid>
+                                    <div class="tm-list uk-grid uk-grid-match uk-child-width-1-4" uk-grid>
                                         <div>
                                             <div class="uk-card">
                                                 <div class="uk-card-media-top uk-border-rounded uk-overflow-hidden"
@@ -119,6 +120,40 @@
                                                     несколько строк при большом тексте Название блока в
                                                     несколько строк при большом тексте</h3>
                                             </div>
+                                            <div uk-drop>
+                                                <div class="uk-navbar-dropdown uk-display-block">
+                                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                        <li class="uk-active"><a href="#">Active</a></li>
+                                                        <li class="uk-parent">
+                                                            <a href="">Item 1</a>
+                                                            <div class="uk-navbar-dropdown" uk-drop="pos: right-top">
+                                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                    <li><a href="">Level 2 Item 1</a></li>
+                                                                    <li class="uk-parent">
+                                                                        <a href="">Level 2 Item 2</a>
+                                                                        <div class="uk-navbar-dropdown" uk-drop="pos: right-top">
+                                                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                                <li><a href="">Level 3 Item 1</a></li>
+                                                                                <li><a href="">Level 3 Item 2</a></li>
+                                                                                <li><a href="">Level 3 Item 3</a></li>
+                                                                                <li><a href="">Level 3 Item 4</a></li>
+                                                                                <li><a href="">Level 3 Item 5</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li><a href="">Level 2 Item 3</a></li>
+                                                                    <li><a href="">Level 2 Item 4</a></li>
+                                                                    <li><a href="">Level 2 Item 5</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="">Item 2</a></li>
+                                                        <li><a href="">Item 3</a></li>
+                                                        <li><a href="">Item 4</a></li>
+                                                        <li><a href="">Item 5</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div>
                                             <div class="uk-card">
@@ -128,6 +163,40 @@
                                                 </div>
                                                 <h3 class="uk-card-title uk-text-uppercase uk-margin">Название блока в
                                                     несколько строк при большом тексте</h3>
+                                            </div>
+                                            <div uk-drop>
+                                                <div class="uk-navbar-dropdown uk-display-block">
+                                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                        <li class="uk-active"><a href="#">Active</a></li>
+                                                        <li class="uk-parent">
+                                                            <a href="">Item 1</a>
+                                                            <div class="uk-navbar-dropdown" uk-drop="pos: right-top">
+                                                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                    <li><a href="">Level 2 Item 1</a></li>
+                                                                    <li class="uk-parent">
+                                                                        <a href="">Level 2 Item 2</a>
+                                                                        <div class="uk-navbar-dropdown" uk-drop="pos: right-top">
+                                                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                                                <li><a href="">Level 3 Item 1</a></li>
+                                                                                <li><a href="">Level 3 Item 2</a></li>
+                                                                                <li><a href="">Level 3 Item 3</a></li>
+                                                                                <li><a href="">Level 3 Item 4</a></li>
+                                                                                <li><a href="">Level 3 Item 5</a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li><a href="">Level 2 Item 3</a></li>
+                                                                    <li><a href="">Level 2 Item 4</a></li>
+                                                                    <li><a href="">Level 2 Item 5</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="">Item 2</a></li>
+                                                        <li><a href="">Item 3</a></li>
+                                                        <li><a href="">Item 4</a></li>
+                                                        <li><a href="">Item 5</a></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                         <div>
@@ -153,7 +222,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </li>
                         <li><a href="">Название блока</a></li>
                         <li><a href="">Название блока</a></li>
@@ -554,7 +622,7 @@
                                             </div>
                                             <div class="uk-card-body uk-padding-remove-horizontal">
                                                 <h3 class="uk-text-uppercase">
-                                                    <a href="" class="uk-button uk-button-text"
+                                                    <a href="" class="uk-link-inverse"
                                                        style="font-size: 16px">Infiniti G IV</a>
                                                 </h3>
 
@@ -594,7 +662,7 @@
                                             </div>
                                             <div class="uk-card-body uk-padding-remove-horizontal">
                                                 <h3 class="uk-text-uppercase">
-                                                    <a href="" class="uk-button uk-button-text"
+                                                    <a href="" class="uk-link-inverse"
                                                        style="font-size: 16px">Infiniti G IV</a>
                                                 </h3>
 
@@ -624,7 +692,6 @@
                                         </div>
                                     </li>
                                 </ul>
-
                             </div>
                         </div>
 
@@ -1113,14 +1180,16 @@
                                     style="font-size: 12px;">
                                     <li>
                                         <a href="" uk-switcher-item="previous">
-                                            <span uk-icon="icon: arrow-left"
-                                                  style="vertical-align: 3px;"></span> Предыдущая машина
+                                            <span uk-icon="icon: arrow-left" style="vertical-align: 3px;"></span>&nbsp;
+                                            <span class="uk-hidden@s">Пред. машина</span>
+                                            <span class="uk-visible@s">Предыдущая машина</span>
                                         </a>
                                     </li>
                                     <li class="uk-text-right">
                                         <a href="" uk-switcher-item="next">
-                                            Следующая машина <span uk-icon="icon: arrow-right"
-                                                                   style="vertical-align: 3px;"></span>
+                                            <span class="uk-hidden@s">След. машина</span>
+                                            <span class="uk-visible@s">Следующая машина</span>&nbsp;
+                                            <span uk-icon="icon: arrow-right" style="vertical-align: 3px;"></span>
                                         </a>
                                     </li>
                                 </ul>
@@ -1136,7 +1205,7 @@
                                             </div>
                                             <div class="uk-card-body uk-width-2-5@m">
                                                 <h3 class="uk-text-uppercase">
-                                                    <a href="" class="uk-text-large uk-button uk-button-text">Infiniti G IV</a>
+                                                    <a href="" class="uk-link-inverse uk-text-large">Infiniti G IV</a>
                                                 </h3>
 
                                                 <div class="uk-grid uk-grid-small" uk-grid>
@@ -1190,7 +1259,7 @@
                                             </div>
                                             <div class="uk-card-body uk-width-2-5@m">
                                                 <h3 class="uk-text-uppercase">
-                                                    <a href="" class="uk-text-large uk-button uk-button-text">Infiniti G IV</a>
+                                                    <a href="" class="uk-link-inverse uk-text-large">Infiniti G IV</a>
                                                 </h3>
 
                                                 <div class="uk-grid uk-grid-small" uk-grid>
@@ -1587,7 +1656,7 @@
 
 
                         <!-- UI -->
-                        <section class="uk-section">
+                        <section class="uk-section uk-padding-small">
                             <div class="uk-margin-large">
                                 <button class="uk-button uk-button-primary"
                                         uk-toggle="target: #modal">Модальная форма</button>
@@ -1719,37 +1788,39 @@
                                 </blockquote>
                             </div>
                             <div class="uk-margin-large">
-                                <table class="uk-table uk-width-1-1">
-                                    <thead>
-                                    <tr>
-                                        <th>Название</th>
-                                        <th>Название</th>
-                                        <th>Название</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>Наполнение 1</td>
-                                        <td>Наполнение 1</td>
-                                        <td>Наполнение 1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Наполнение 1</td>
-                                        <td>Наполнение 1</td>
-                                        <td>Наполнение 1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Наполнение 1</td>
-                                        <td>Наполнение 1</td>
-                                        <td>Наполнение 1</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Наполнение 1</td>
-                                        <td>Наполнение 1</td>
-                                        <td>Наполнение 1</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                <div class="uk-overflow-auto">
+                                    <table class="uk-table">
+                                        <thead>
+                                        <tr>
+                                            <th>Название</th>
+                                            <th>Название</th>
+                                            <th>Название</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Наполнение 1</td>
+                                            <td>Наполнение 1</td>
+                                            <td>Наполнение 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Наполнение 1</td>
+                                            <td>Наполнение 1</td>
+                                            <td>Наполнение 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Наполнение 1</td>
+                                            <td>Наполнение 1</td>
+                                            <td>Наполнение 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Наполнение 1</td>
+                                            <td>Наполнение 1</td>
+                                            <td>Наполнение 1</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                             <div class="uk-margin-large">
                                 <div class="uk-position-relative uk-padding-vertical uk-padding-remove-top">
@@ -1764,12 +1835,12 @@
                                     <ul class="tm-reviews uk-switcher">
                                         <li>
                                             <div class="uk-grid" uk-grid>
-                                                <div class="uk-width-auto">
-                                                    <div class="uk-border-circle uk-overflow-hidden uk-width-small uk-height-small">
+                                                <div class="uk-width-auto@s">
+                                                    <div class="uk-border-circle uk-overflow-hidden uk-margin-auto uk-width-small uk-height-small">
                                                         <img src="images/preview_002.png" alt="">
                                                     </div>
                                                 </div>
-                                                <div class="uk-width-expand">
+                                                <div class="uk-width-expand@s">
                                                     <h3 class="uk-text-base uk-text-uppercase">
                                                         <a href="" class="uk-float-right uk-link-muted">
                                                             <span style="font-size: 10px">читать подробнее</span>
@@ -1789,7 +1860,7 @@
                                         <li>
                                             <div class="uk-grid" uk-grid>
                                                 <div class="uk-width-auto@s">
-                                                    <div class="uk-border-circle uk-width-small uk-height-small">
+                                                    <div class="uk-border-circle uk-overflow-hidden uk-margin-auto uk-width-small uk-height-small">
                                                         <img src="images/preview_002.png" alt="">
                                                     </div>
                                                 </div>
@@ -1813,7 +1884,7 @@
                                         <li>
                                             <div class="uk-grid" uk-grid>
                                                 <div class="uk-width-auto@s">
-                                                    <div class="uk-border-circle uk-width-small uk-height-small">
+                                                    <div class="uk-border-circle uk-overflow-hidden uk-margin-auto uk-width-small uk-height-small">
                                                         <img src="images/preview_002.png" alt="">
                                                     </div>
                                                 </div>
@@ -1835,6 +1906,67 @@
                                             </div>
                                         </li>
                                     </ul>
+                                </div>
+                            </div>
+                            <div class="uk-margin-large">
+                                <div id="map" class="uk-height-large">
+                                    <script type="text/javascript">
+                                        $(document).ready(function () {
+                                            $(window).on('load', function () {
+
+                                                function init() {
+
+                                                    // Создаем карту.
+                                                    var Map = new ymaps.Map('map', {
+                                                        center: [55.736295, 37.583895],
+                                                        zoom: 16,
+                                                        controls: []
+                                                    }, {
+                                                        searchControlProvider: 'yandex#search'
+                                                    });
+
+                                                    // Создаем метки
+                                                    var Placemark1 = new ymaps.Placemark([55.736469, 37.588980], {
+                                                        iconContent: '1'
+                                                    }, {
+                                                        iconLayout: 'default#image',
+                                                        iconImageClipRect: [[0, 0], [34, 44]],
+                                                        iconImageHref: 'images/backgrounds/map-marker-1.png',
+                                                        iconImageSize: [34, 44],
+                                                        iconImageOffset: [-17, -44],
+                                                    });
+
+                                                    var Placemark2 = new ymaps.Placemark([55.734195, 37.585895], {
+                                                        iconContent: '2dawdadzxcada'
+                                                    }, {
+                                                        iconLayout: 'default#image',
+                                                        iconImageClipRect: [[0, 0], [34, 44]],
+                                                        iconImageHref: 'images/backgrounds/map-marker-2.png',
+                                                        iconImageSize: [34, 44],
+                                                        iconImageOffset: [-17, -44],
+                                                    });
+
+                                                    var Placemark3 = new ymaps.Placemark([55.736996, 37.580550], { // 55°44'13.2"N 37°34'50.0"E
+                                                        iconContent: '3'
+                                                    }, {
+                                                        iconLayout: 'default#image',
+                                                        iconImageClipRect: [[0, 0], [34, 44]],
+                                                        iconImageHref: 'images/backgrounds/map-marker-3.png',
+                                                        iconImageSize: [34, 44],
+                                                        iconImageOffset: [-17, -44],
+                                                    });
+
+                                                    Map.geoObjects.add(Placemark1).add(Placemark2).add(Placemark3)
+
+                                                }
+
+                                                if (ymaps) {
+                                                    ymaps.ready(init)
+                                                }
+
+                                            })
+                                        })
+                                    </script>
                                 </div>
                             </div>
                         </section>
@@ -1914,13 +2046,13 @@
             <div class="uk-container uk-container-center">
                 <footer class="tm-footer uk-padding-small uk-padding-remove-horizontal">
                     <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m uk-flex-middle" uk-grid>
-                        <div>
+                        <div class="uk-text-center uk-text-left@s">
                             <a href="/"><img src="./images/logo-alt.png" alt="Blitz Car"></a>
                         </div>
                         <div class="uk-text-center uk-text-uppercase uk-light uk-visible@m">
                             ooo «Blitz Avto» Все права защищены
                         </div>
-                        <div class="uk-text-right@s">
+                        <div class="uk-text-center uk-text-right@s">
                             <div class="uk-text-primary" style="font-size: 22px">8 800 123 456 78</div>
                             <div class="uk-text-uppercase uk-text-muted"
                                  style="font-size: 12px">Работаем круглосуточно</div>
