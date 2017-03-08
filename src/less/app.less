@@ -227,6 +227,12 @@
 .tm-navbar {
     > .uk-navbar-nav {
         > :first-child > a { padding-left: 0; }
+
+        > li:hover {
+            > .uk-navbar-dropdown {
+                display: block;
+            }
+        }
     }
 
     .uk-navbar-dropdown {
@@ -237,10 +243,20 @@
         padding-bottom: 0;
         width: 270px;
 
-        .uk-parent { position: relative; }
+        .uk-parent {
+            position: relative;
+        }
 
         .uk-navbar-dropdown {
             margin-top: -(@navbar-dropdown-padding);
+        }
+    }
+
+    .tm-list {
+        > div {
+            .uk-card {
+                border-bottom: 1px solid @global-secondary-background;
+            }
         }
     }
 }
@@ -313,13 +329,17 @@
         }
 
         &:last-child {
-
             padding-bottom: @section-padding-vertical;
-
         }
     }
 
     &-alt {
+        > div {
+            &:last-child {
+                padding-bottom: @section-padding-vertical;
+            }
+        }
+
         .uk-card {
             padding-left: 20px;
             padding-right: 20px;
@@ -751,8 +771,8 @@
         top: 0;
         left: 50%;
         height: 35px;
-        width: 340px;
-        margin: -35px 0 0 -170px;
+        width: 320px;
+        margin: -34px 0 0 -160px;
 
         //@media (min-width: @breakpoint-medium) {
         //    display: block;

@@ -63,9 +63,17 @@
 // Links
 // ========================================================================
 
-.hook-base-link() {}
+.hook-base-link() {
+    &.uk-link-inverse {
+        color: @global-link-hover-color;
+    }
+}
 
-.hook-base-link-hover() {}
+.hook-base-link-hover() {
+    &.uk-link-inverse {
+        color: @global-link-color;
+    }
+}
 
 
 // Text-level semantics
