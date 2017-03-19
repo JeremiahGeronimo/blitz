@@ -106,6 +106,7 @@
 }
 
 .tm-main {
+    box-shadow: -1px 0 0 #f6f6f6;
     .uk-section{
         &:not(.uk-section-media) {
             .tm-section-description {
@@ -846,11 +847,20 @@
 .tm-nav-repurchased {
     > li {
         > a {
+            position: relative;
+            padding: 8px 40px 8px 50px !important;
 
             > .uk-icon {
+                position: absolute;
+                left: 20px;
                 background-image: url(./../images/icon_006.png);
-                margin-top: -6px;
-                margin-right: 10px;
+                margin-top: 0;
+            }
+
+            &:after {
+                position: absolute;
+                right: 20px;
+                top: 9px;
             }
         }
     }
